@@ -52,13 +52,11 @@ ul {
 
 /*===================== HEADER ===================== */
 .header {
-  width: 1600px;
   height: 80px;
   border: 1px solid #ececec;
 }
 .navigation-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   height: 80px;
 }
@@ -68,12 +66,14 @@ ul {
 }
 
 .link {
-  display: flex;
+  display: block;
   align-items: center;
+
+  color: var(--title-color);
 }
 
-.nav-list-item:not(:last-child) {
-  margin-right: 50px;
+.navigation-container .link {
+  margin-right: 93px;
 }
 
 .nav-link {
@@ -83,8 +83,9 @@ ul {
 
 .nav-list-link:not(:last-child) {
   margin-right: 50px;
-  margin-left: 331px;
+  margin-left: 281px;
 }
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -97,8 +98,10 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: var(--title-color);
+  flex-wrap: wrap;
+  align-items: center;
 }
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -116,13 +119,18 @@ ul {
   color: var(--accent-color);
 }
 .logo-studio-part {
-  margin-right: 93px;
   font-family: var(--secondary-font);
   color: var(--logo-color);
 }
 
+.nav-list-item .link {
+  margin-right: 50px;
+}
+
 .address-link,
 .header-tel-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -141,36 +149,32 @@ ul {
 /*=============== HERO ===================*/
 
 .hero {
-  width: 1600px;
   height: 600px;
-
+  padding-top: 200px;
+  text-align: center;
   background: var(--hero-background);
 }
 
-.hero-title {
-  position: absolute;
+.hero .container {
   width: 696px;
-  height: 120px;
-  margin-top: 200px;
-  margin-bottom: 280px;
-  margin-right: 452px;
-  margin-left: 452px;
+}
 
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   letter-spacing: 0.06em;
+
   text-transform: uppercase;
-  text-align: center;
 
   color: var(--hero-color);
 }
 
 .modal-button {
-  position: absolute;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
 
+  margin-top: 30px;
   background-color: var(--accent-color);
   font-style: normal;
   font-weight: 700;
@@ -178,10 +182,6 @@ ul {
   line-height: 30px;
 
   align-items: center;
-  margin-top: 350px;
-  margin-bottom: 200px;
-  margin-left: 700px;
-  margin-right: 700px;
 
   letter-spacing: 0.06em;
 
@@ -192,10 +192,6 @@ ul {
 
 .advantages-section .container {
   display: flex;
-}
-
-.advantages-section {
-  width: 1600px;
 }
 
 .advantages-list {
@@ -238,7 +234,6 @@ ul {
 
 .duties-section {
   display: flex;
-  width: 1600px;
 }
 .duties .logo-studio-part-footer {
   font-family: var(--secondary-font);
@@ -281,7 +276,6 @@ ul {
 /*================= OUR TEAM ================== */
 .team-section {
   display: flex;
-  width: 1600px;
   height: 648px;
   margin-top: 94px;
 
@@ -347,8 +341,7 @@ ul {
 /*================ FOOTER =================*/
 
 .footer-section {
-  position: absolute;
-  width: 1600px;
+  display: flex;
 
   background: var(--hero-background);
 }
@@ -405,7 +398,7 @@ ul {
   color: var(--hero-color);
 }
 
-.footer-section .logo-web-part {
+.footer-section .link {
   margin-top: 60px;
 }
 
@@ -417,6 +410,7 @@ ul {
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-top: 9px;
 
   color: var(--link-footer-color);
 }
@@ -439,20 +433,15 @@ ul {
 
 /*============= PORTFOLIO HEADER ================== */
 
-.main-container {
-  width: 1600px;
-}
-
 .heroportfolio-list {
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
 }
 
 .filters-container {
   height: 54px;
-
-  margin-left: 495px;
+  align-content: center;
+  margin-left: 290px;
   margin-top: 94px;
   margin-bottom: 4px;
 }
