@@ -210,8 +210,6 @@ ul {
 }
 .advantages-list-item {
   width: 270px;
-  height: 101px;
-  margin-top: 94px;
   align-content: center;
 }
 
@@ -241,7 +239,13 @@ ul {
 
 /* ================= OUR DUTIES =============== */
 
+.advantages-section {
+  padding-top: 94px;
+}
+
 .duties-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
 }
 .duties .logo-studio-part-footer {
@@ -262,9 +266,8 @@ ul {
   margin: 0px 0px;
 }
 
-.duties {
-  padding-top: 94px;
-  padding-bottom: 50px;
+.duties-list-item {
+  width: 370px;
 }
 
 .duties-list-item:not(:last-child) {
@@ -276,7 +279,7 @@ ul {
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 50px;
   letter-spacing: 0.03em;
 
   color: var(--title-color);
@@ -285,9 +288,8 @@ ul {
 /*================= OUR TEAM ================== */
 .team-section {
   display: flex;
-  height: 648px;
-  margin-top: 94px;
-
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--team-background);
 }
 
@@ -300,8 +302,10 @@ ul {
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .team-list-item {
-  margin-bottom: 94px;
+  width: 270px;
+
   background-color: var(--hero-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -315,20 +319,24 @@ ul {
   line-height: 1.167;
   text-align: center;
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   letter-spacing: 0.03em;
 
   color: var(--title-color);
 }
+
+.team-member-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-member-name {
   font-style: 400;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
 
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 0px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -340,8 +348,10 @@ ul {
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 30px;
+
+  margin-top: 10px;
+  margin-bottom: 0px;
+
   letter-spacing: 0.03em;
 
   color: var(--link-color);
