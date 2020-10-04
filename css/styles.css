@@ -394,8 +394,8 @@ img {
   color: var(--hero-color);
 }
 
-.adress-info {
-  margin-top: 10px;
+.address-info {
+  margin-top: 20px;
 }
 
 .footer-address {
@@ -444,7 +444,8 @@ img {
 
 /*============= PORTFOLIO HEADER ================== */
 .hero-portfolio {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .heroportfolio-list {
   display: flex;
@@ -478,7 +479,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0px;
-  margin-bottom: 94px;
 }
 
 .projects-list-item:nth-last-child(-n + 3) {
